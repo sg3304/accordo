@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #008080;
+  display: flex;
+  min-width: 1000px;
+  min-height: 500px;
+  
+}
+
+/*toggable*/
+.centered_view_discord_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #c0c0c0;
+  border: 2px solid #000;
+  box-shadow: 3px 3px 0 #000;
+  overflow: hidden;
+  min-width: auto;
+  min-height: auto;
+}
+
+.discord-container {
+  font-size: x-large;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #c0c0c0;
+  border: 2px solid #000;
+  box-shadow: 3px 3px 0 #000;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+}
+
+.server-list-container {
+  background-color: #c0c0c0;
+  border-right: 2px solid #000;
+  padding: 10px;
+  margin-top: 1%;
+  max-width: 100px;
+  min-width: 100px;
+  overflow: scroll;
+  margin-right: 10px;
+  flex-shrink: 0;
+
+
+}
+
+.server-list-container .server-list {
+  list-style: none;
+  padding: 0;
+
+}
+
+.server-list-container .server-list li {
+  margin-bottom: 10px;
+}
+
+.server-list-container .server-list img {
+  width: 100%;
+  height: 100%;
+}
+
+/*channels*/
+.channel-list {
+  max-width: 250px;
+  min-width: 250px;
+
+  background-color: #c0c0c0;
+  border-left: 2px solid #000;
+  padding: 10px;
+  flex-shrink: 0;
+  
+
+}
+
+
+.channel-list .tree-view {
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.other-channels {}
+
+.selection-channels {
+
+  background-color: #f00;
+  width: 200px;
+  height: 200px;
+}
+
+a.fill-selected-channel {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
+/*chat*/
+.chat-container {
+  border-left: 2px solid #000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+
+}
+
+.chat-window {
+  flex: 1;
+  background-color: #fff;
+  padding: 10px;
+  border: 2px solid #000;
+  margin: 10px;
+  overflow-y: auto;
+  height: calc(100vh - 120px);
+
+}
+
+.chat-input {
+  background-color: #c0c0c0;
+  padding: 10px;
+  border-top: 2px solid #000;
+  flex-shrink: 0;
+  /* Prevents the input from shrinking */
+}
+
+.chat-input input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #000;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message strong {
+  color: #000080;
+}
+
+.users-tab {
+  width: 15%;
+  border-left: 2px solid #000;
+  padding: 10px;
+}
+
+/*goes together with default btn win98.css class as in class="btn user-btn"*/
+.user-btn {
+  width: 100%;
+  height: 100%;
+}
+
+.users-tab ul {
+  list-style: none;
+  padding: 0;
+}
+
+.users-tab ul li {
+  margin-bottom: 10px;
+
+}
+
+.user_btn_container {
+  width: 5%;
+}
+
+.user-frame-details {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: medium;
+}
+
+.user-frame-details .user-frame-icon {
+  margin-left: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.tooltip_popup {
+  height: 3em;
+  width: 10em;
+  background: yellow;
+}

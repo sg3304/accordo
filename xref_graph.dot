@@ -1,0 +1,47 @@
+digraph "xref graph" {
+  "lib/discord_clone.ex"
+  "lib/discord_clone/application.ex"
+  "lib/discord_clone/application.ex" -> "lib/discord_clone/repo.ex"
+  "lib/discord_clone/application.ex" -> "lib/discord_clone_web/endpoint.ex"
+  "lib/discord_clone_web/endpoint.ex" -> "lib/discord_clone_web.ex" [label="(compile)"]
+  "lib/discord_clone_web/endpoint.ex" -> "lib/discord_clone_web/router.ex"
+  "lib/discord_clone_web/router.ex" -> "lib/discord_clone_web.ex" [label="(compile)"]
+  "lib/discord_clone_web/router.ex" -> "lib/discord_clone_web/components/layouts.ex"
+  "lib/discord_clone_web/components/layouts.ex" -> "lib/discord_clone_web.ex" [label="(compile)"]
+  "lib/discord_clone_web/components/layouts.ex" -> "lib/discord_clone_web/components/core_components.ex" [label="(export)"]
+  "lib/discord_clone_web/components/core_components.ex" -> "lib/discord_clone_web/gettext.ex"
+  "lib/discord_clone_web/components/layouts.ex" -> "lib/discord_clone_web/endpoint.ex"
+  "lib/discord_clone_web/components/layouts.ex" -> "lib/discord_clone_web/gettext.ex"
+  "lib/discord_clone_web/components/layouts.ex" -> "lib/discord_clone_web/router.ex"
+  "lib/discord_clone_web/router.ex" -> "lib/discord_clone_web/controllers/page_controller.ex"
+  "lib/discord_clone_web/controllers/page_controller.ex" -> "lib/discord_clone_web.ex" [label="(compile)"]
+  "lib/discord_clone_web/controllers/page_controller.ex" -> "lib/discord_clone_web/components/layouts.ex"
+  "lib/discord_clone_web/controllers/page_controller.ex" -> "lib/discord_clone_web/endpoint.ex"
+  "lib/discord_clone_web/controllers/page_controller.ex" -> "lib/discord_clone_web/gettext.ex"
+  "lib/discord_clone_web/controllers/page_controller.ex" -> "lib/discord_clone_web/router.ex"
+  "lib/discord_clone_web/router.ex" -> "lib/discord_clone_web/telemetry.ex"
+  "lib/discord_clone/application.ex" -> "lib/discord_clone_web/telemetry.ex"
+  "lib/discord_clone/mailer.ex"
+  "lib/discord_clone/repo.ex"
+  "lib/discord_clone_web.ex"
+  "lib/discord_clone_web/components/core_components.ex"
+  "lib/discord_clone_web/components/layouts.ex"
+  "lib/discord_clone_web/controllers/error_html.ex"
+  "lib/discord_clone_web/controllers/error_html.ex" -> "lib/discord_clone_web.ex" [label="(compile)"]
+  "lib/discord_clone_web/controllers/error_html.ex" -> "lib/discord_clone_web/components/core_components.ex" [label="(export)"]
+  "lib/discord_clone_web/controllers/error_html.ex" -> "lib/discord_clone_web/endpoint.ex"
+  "lib/discord_clone_web/controllers/error_html.ex" -> "lib/discord_clone_web/gettext.ex"
+  "lib/discord_clone_web/controllers/error_html.ex" -> "lib/discord_clone_web/router.ex"
+  "lib/discord_clone_web/controllers/error_json.ex"
+  "lib/discord_clone_web/controllers/page_controller.ex"
+  "lib/discord_clone_web/controllers/page_html.ex"
+  "lib/discord_clone_web/controllers/page_html.ex" -> "lib/discord_clone_web.ex" [label="(compile)"]
+  "lib/discord_clone_web/controllers/page_html.ex" -> "lib/discord_clone_web/components/core_components.ex" [label="(export)"]
+  "lib/discord_clone_web/controllers/page_html.ex" -> "lib/discord_clone_web/endpoint.ex"
+  "lib/discord_clone_web/controllers/page_html.ex" -> "lib/discord_clone_web/gettext.ex"
+  "lib/discord_clone_web/controllers/page_html.ex" -> "lib/discord_clone_web/router.ex"
+  "lib/discord_clone_web/endpoint.ex"
+  "lib/discord_clone_web/gettext.ex"
+  "lib/discord_clone_web/router.ex"
+  "lib/discord_clone_web/telemetry.ex"
+}
